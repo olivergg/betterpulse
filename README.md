@@ -154,4 +154,4 @@ Contributions are welcome! Feel free to:
 
 ## 📜 License
 
-This project is under MIT License. See the `LICENSE` file for more details.
+This project is under GPLv3 License. See the `LICENSE` file for more details.
