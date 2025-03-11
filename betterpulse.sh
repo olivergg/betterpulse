@@ -2,10 +2,10 @@
 set -euo pipefail
 
 # Constants
-CONFIG_FILE="$HOME/.config/vpn_config.ini"
+CONFIG_FILE="$HOME/.config/betterpulse/vpn_config.ini"
 COOKIE_FILE="/tmp/cookievpn"
-VPNC_SCRIPT="$PWD/vpnc-script"
-PREFIX_FILE="$HOME/.mobilepassprefix"
+VPNC_SCRIPT="$HOME/.config/betterpulse/vpnc-script"
+PREFIX_FILE="$HOME/.config/betterpulse/.mobilepassprefix"
 
 # Function to read INI file
 get_ini_value() {

@@ -71,7 +71,9 @@ set_ipv4_default_route() {
 
 ## ⚙️ Configuration
 
-Create a `~/.config/vpn_config.ini` file with the following structure:
+Create a directory ~/.config/betterpulse that will store the various configuration files.
+
+Create a `~/.config/betterpulse/vpn_config.ini` file with the following structure:
 
 ```ini
 [vpn]
@@ -109,17 +111,16 @@ cd betterpulse
 chmod u+x betterpulse.sh vpnc-script
 ```
 
-3. Create your configuration file:
+3. Copy the vpnc-script to your configuration folder:
 
 ```bash
-mkdir -p ~/.config
-cp vpn_config.ini.example ~/.config/vpn_config.ini
+cp vpnc-script ~/.config/betterpulse/
 ```
 
 4. Edit the configuration file with your settings:
 
 ```bash
-nano ~/.config/vpn_config.ini
+nano ~/.config/betterpulse/vpn_config.ini
 ```
 
 ## 📝 Usage
@@ -141,7 +142,7 @@ nano ~/.config/vpn_config.ini
 To save a mobile token prefix (optional):
 
 ```bash
-echo "your-prefix" > ~/.mobilepassprefix
+echo "your-prefix" > ~/.config/betterpulse/.mobilepassprefix
 ```
 
 ## 🤝 Contributing
