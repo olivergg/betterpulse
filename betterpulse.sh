@@ -28,6 +28,9 @@ VPN_USER_AGENT=$(get_ini_value "vpn" "user_agent")
 SSH_HOST=$(get_ini_value "ssh_tunnel" "host")
 SSH_NS=$(get_ini_value "ssh_tunnel" "nameserver")
 
+echo "Config file : at $CONFIG_FILE"
+echo "Vpnc script : at $VPNC_SCRIPT"
+
 # Load routes from config
 IFS=',' read -ra ROUTES_TO_REPLACE <<< "$(get_ini_value "routes" "routes_to_replace")"
 export ROUTES_TO_REPLACE
